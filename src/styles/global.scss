@@ -38,9 +38,21 @@
     cursor: pointer;
 }
 
+.is_clickable.mat-list-item:hover {
+    background: $c-secondary !important;
+}
+
+.is_clickable.mat-list-item:active {
+    background: $c-secondary-variant !important;
+}
+
 .is_link {
     color: $c-link-color;
     text-decoration: underline;
+}
+
+.is_link:hover {
+    color: $c-link-hover-color;
 }
 
 .full_width {

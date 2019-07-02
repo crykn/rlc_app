@@ -94,3 +94,7 @@ mat-icon{
 .sidebar__other-links__items {
     color: $c-on-secondary;
 }
+
+.sidebar__other-links__items:hover {
+    color: $c-primary;
+}
