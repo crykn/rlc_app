@@ -174,6 +174,8 @@ export class SidebarComponent implements OnInit {
     ) {}
 
     ngOnInit() {
+        this.recheckSidebarItems();
+
         this.apiSB.hasPermissionFromStringForOwnRlc(
             PERMISSION_CAN_VIEW_RECORDS,
             hasPermission => {
