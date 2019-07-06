@@ -20,6 +20,7 @@ import { NgModule } from "@angular/core";
 import { StoreModule } from "@ngrx/store";
 import { EffectsModule } from "@ngrx/effects";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatTabsModule } from '@angular/material';
 
 import { RecordsRoutingModule } from "./records-routing.module";
 import { RecordsListComponent } from "./pages/record-list/records-list.component";
@@ -56,7 +57,8 @@ import { RecordDocumentItemDetailComponent } from './components/records/document
             RecordsEffects,
             RecordsAddEffects,
             RecordsLoadingEffects
-        ])
+        ]),
+        MatTabsModule
     ],
     declarations: [
         RecordsListComponent,

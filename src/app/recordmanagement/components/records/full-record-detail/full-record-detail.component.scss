@@ -36,6 +36,16 @@
 .full-record-detail__card {
     margin-bottom: 30px;
     max-width: 850px;
+    padding: 0px !important;
+    z-index: 1;
+}
+
+.full-record-detail__tab-view {
+    margin: 16px;
+}
+
+.full-record-detail__tab-content {
+    margin-top: 8px;
 }
 
 .full-record-detail__header {
@@ -43,7 +53,7 @@
     //position: fixed;
     background-color: $c-real-background;
     max-width: 850px;
-    z-index: 1;
+    z-index: 2;
 
     position: sticky;
     position: -webkit-sticky; /* For macOS/iOS Safari */
@@ -53,6 +63,7 @@
 .full-record-detail__last-edited {
     font-size: 13px;
     color: $c-secondary-variant;
+    margin-bottom: 5px;
 }
 
 .full-record-detail__select-state {
@@ -80,4 +91,8 @@
 .full-record-detail__titles {
     display: flex;
     align-items: center;
+}
+
+.full-record-detail__divider {
+    margin-bottom: 16px;
 }

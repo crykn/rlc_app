@@ -70,6 +70,7 @@ export class CreateRecordComponent implements OnInit {
             client_phone_number: new FormControl(""),
             client_note: new FormControl(""),
             record_token: new FormControl("", [Validators.required]),
+            official_note: new FormControl(""),
             record_note: new FormControl("")
         });
 

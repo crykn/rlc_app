@@ -141,7 +141,7 @@ class RecordViewSet(APIView):
 
         record = models.Record(client_id=client.id, first_contact_date=data['first_contact_date'],
                                last_contact_date=data['first_contact_date'], record_token=data['record_token'],
-                               note=data['record_note'], creator_id=request.user.id, from_rlc_id=rlc.id, state="op")
+                               note=data['record_note'], creator_id=request.user.id, from_rlc_id=rlc.id, state="op", official_note=data['official_note'])
         record.save()
 
         for tag_id in data['tags']:
@@ -155,7 +155,7 @@ class RecordViewSet(APIView):
             url = FrontendLinks.get_record_link(record)
             EmailSender.send_email_notification([actual_consultant.email], "New Record",
                                                 "RLC Intranet Notification - Your were assigned as a consultant for a new record. Look here:" +
-                                                url)
+                                               url)
 
         return Response(serializers.RecordFullDetailSerializer(record).data)
 

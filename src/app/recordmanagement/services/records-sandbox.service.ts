@@ -245,6 +245,7 @@ export class RecordsSandboxService {
             ),
             record_token: createFormValues.record_token,
             record_note: createFormValues.record_note,
+            official_note: createFormValues.official_note,
             consultants: consultants
                 ? consultants.map(consultant => consultant.id)
                 : "",

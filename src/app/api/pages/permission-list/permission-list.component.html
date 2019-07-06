@@ -18,8 +18,7 @@
 
 <mat-card class="permission-list__mat-card">
     <mat-card-content>
-        <h1 matLine>Permission list</h1>
-        <h2>all Permissions:</h2>
+        <h1 matLine>Full Permission list</h1>
         <div *ngIf="permissions | async as catalog; else loading">
             <ng-container *ngIf="catalog.length; else noItems">
                 <mat-list>
